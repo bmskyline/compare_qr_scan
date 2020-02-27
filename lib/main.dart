@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:test_scan/page/page_four.dart';
+import 'package:test_scan/page/page_one.dart';
+import 'package:test_scan/page/page_three.dart';
+import 'package:test_scan/page/page_two.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,11 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Compare QR code Scanner',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Compare QR code Scanner'),
     );
   }
 }
@@ -26,13 +30,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
