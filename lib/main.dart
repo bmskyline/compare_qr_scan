@@ -15,15 +15,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Compare QR code Scanner'),
+      home: MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-  
-  final String title;
+
+  MyHomePage();
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -35,27 +34,25 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
    
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
+      appBar: AppBar(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             RaisedButton(
-              onPressed: _onPressOne(),
+              onPressed: () => _onPressOne(),
               child: Text("Library 1"),
             ),
             RaisedButton(
-              onPressed: _onPressTwo(),
+              onPressed: () => _onPressTwo(),
               child: Text("Library 2"),
             ),
             RaisedButton(
-              onPressed: _onPressThree(),
+              onPressed: () => _onPressThree(),
               child: Text("Library 3"),
             ),
             RaisedButton(
-              onPressed: _onPressFour(),
+              onPressed: () => _onPressFour(),
               child: Text("Library 4"),
             ),
           ],
