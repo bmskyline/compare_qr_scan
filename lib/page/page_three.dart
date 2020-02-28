@@ -20,24 +20,22 @@ class _PageThreeState extends State<PageThree> {
       appBar: AppBar(
         title: Text("Libraby 3"),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            SizedBox(
-              width: double.infinity,
-              height: 300.0,
-              child: QRView(
-                key: qrKey,
-                onQRViewCreated: _onQRViewCreated,
-              ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+          SizedBox(
+            width: double.infinity,
+            height: 300.0,
+            child: QRView(
+              key: qrKey,
+              onQRViewCreated: _onQRViewCreated,
             ),
-            Container(
-              margin: EdgeInsets.only(top: 64.0),
-              child: Text(qrText),
-            )
-          ],
-        ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 64.0),
+            child: Text(qrText),
+          )
+        ],
       ),
     );
   }

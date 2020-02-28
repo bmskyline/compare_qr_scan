@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:test_scan/page/page_four.dart';
 import 'package:test_scan/page/page_one.dart';
 import 'package:test_scan/page/page_three.dart';
 import 'package:test_scan/page/page_two.dart';
@@ -51,10 +50,6 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () => _onPressThree(),
               child: Text("Library 3"),
             ),
-            RaisedButton(
-              onPressed: () => _onPressFour(),
-              child: Text("Library 4"),
-            ),
           ],
         ),
       ),
@@ -81,14 +76,6 @@ class _MyHomePageState extends State<MyHomePage> {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => PageThree()),
-    );
-  }
-
-  _onPressFour() {
-    //flutter barcode
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => PageFour()),
     );
   }
 }

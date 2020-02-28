@@ -26,12 +26,10 @@ dependencies:
   qr_mobile_vision: ^0.3.1
   barcode_scan: ^2.0.1
   qr_code_scanner: ^0.0.12
-  flutter_barcode_scanner: ^0.1.7
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

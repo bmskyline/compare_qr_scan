@@ -3,7 +3,7 @@ import 'package:qr_mobile_vision/qr_camera.dart';
 
 //QR mobile vision
 class PageOne extends StatefulWidget {
-  PageOne({Key key}) : super(key: key);
+  PageOne();
 
   @override
   _PageOneState createState() => _PageOneState();

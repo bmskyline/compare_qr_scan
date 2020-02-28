@@ -24,7 +24,7 @@ class _PageTwoState extends State<PageTwo> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
-              child: new MaterialButton(
+              child: RaisedButton(
                   onPressed: scan, child: new Text("Scan")),
               padding: const EdgeInsets.all(8.0),
             ),
